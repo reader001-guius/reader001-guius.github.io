@@ -13,7 +13,9 @@
     
     <categories>
       
-      <category>life - movies</category>
+      <category>life</category>
+      
+      <category>movies</category>
       
     </categories>
     
@@ -32,7 +34,9 @@
     
     <categories>
       
-      <category>life - book</category>
+      <category>life</category>
+      
+      <category>book</category>
       
     </categories>
     
@@ -51,7 +55,9 @@
     
     <categories>
       
-      <category>study - math</category>
+      <category>study</category>
+      
+      <category>math</category>
       
     </categories>
     
