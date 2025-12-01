@@ -5,8 +5,8 @@
   
   <entry>
     <title>movies</title>
-    <link href="/blog/2025/12/01/Movies/"/>
-    <url>/blog/2025/12/01/Movies/</url>
+    <link href="/2025/12/01/Movies/"/>
+    <url>/2025/12/01/Movies/</url>
     
     <content type="html"><![CDATA[<h1 id="Movies"><a href="#Movies" class="headerlink" title="Movies"></a>Movies</h1>]]></content>
     
@@ -24,8 +24,8 @@
   
   <entry>
     <title>BOOK</title>
-    <link href="/blog/2025/12/01/book/"/>
-    <url>/blog/2025/12/01/book/</url>
+    <link href="/2025/12/01/book/"/>
+    <url>/2025/12/01/book/</url>
     
     <content type="html"><![CDATA[<h1 id="book"><a href="#book" class="headerlink" title="book"></a>book</h1><h2 id="literature"><a href="#literature" class="headerlink" title="literature"></a>literature</h2><h3 id="《刀锋》"><a href="#《刀锋》" class="headerlink" title="《刀锋》"></a>《刀锋》</h3><p>难以描述阅读时的震撼之感</p><p>在拉里身上看到了自己的些许影子，也曾一度追问过意义与价值，却又迷惘彷徨而归。拉里厉害许多，他走遍各地，如饥似渴的阅读，体验，探索……</p><p>那样直观而震撼的感受到人类浩如烟海的知识与文明，往前看，有那样长的历史，那样丰富庞杂的学科与知识，踮脚眺望，有那样多的国家，那样丰富的人们，那样广阔的天地人间……顿感自己的渺小与恍若须臾片刻的生命时间，自己的思想是那样简单与浅薄，也顿感时间的紧迫与稍纵即逝，去阅读，去看，去思考，去感受世界，找到自己的答案…</p><p>呵，生命啊，它苦涩如歌</p>]]></content>
     
@@ -43,8 +43,8 @@
   
   <entry>
     <title>linear algebra</title>
-    <link href="/blog/2025/12/01/linear%20algebra/"/>
-    <url>/blog/2025/12/01/linear%20algebra/</url>
+    <link href="/2025/12/01/linear%20algebra/"/>
+    <url>/2025/12/01/linear%20algebra/</url>
     
     <content type="html"><![CDATA[<h1 id="linear-algebra"><a href="#linear-algebra" class="headerlink" title="linear algebra"></a>linear algebra</h1><h2 id="秩一矩阵"><a href="#秩一矩阵" class="headerlink" title="秩一矩阵"></a>秩一矩阵</h2><p>[TOC]</p><h2 id="正交矩阵"><a href="#正交矩阵" class="headerlink" title="正交矩阵"></a>正交矩阵</h2><h3 id="T1-when-Ax-b-have-no-solution"><a href="#T1-when-Ax-b-have-no-solution" class="headerlink" title="T1:when Ax&#x3D;b have no solution"></a>T1:when Ax&#x3D;b have no solution</h3><p>$$<br>A\mathbf{x}&#x3D;\mathbf{b}无解时，为什么求最佳\mathbf{x}_{best}转化为A^TA\mathbf{x}&#x3D;A^T\mathbf{b}<br>$$</p><p><img src="C:\Users\31575\AppData\Roaming\Typora\typora-user-images\image-20251122120955823.png" alt="image-20251122120955823"></p><p><img src="C:\Users\31575\AppData\Roaming\Typora\typora-user-images\image-20251122121007424.png" alt="image-20251122121007424"></p><p><img src="C:\Users\31575\AppData\Roaming\Typora\typora-user-images\image-20251122121032475.png" alt="image-20251122121032475"></p><p><img src="C:\Users\31575\AppData\Roaming\Typora\typora-user-images\image-20251122121047812.png" alt="image-20251122121047812"></p><p><img src="C:\Users\31575\AppData\Roaming\Typora\typora-user-images\image-20251122121100100.png" alt="image-20251122121100100"></p>]]></content>
     
