@@ -19,27 +19,21 @@
   <meta name="author" content="Yiran Li">
   <meta name="keywords" content="">
   
-    <meta name="description" content="linear algebra秩一矩阵[TOC] 正交矩阵T1:when Ax&#x3D;b have no solution$$A\mathbf{x}&#x3D;\mathbf{b}无解时，为什么求最佳\mathbf{x}_{best}转化为A^TA\mathbf{x}&#x3D;A^T\mathbf{b}$$      math 自定义 Gem 这是一个非常经典的线性代数理论证明题（第 8 题）">
+    <meta name="description" content="monologue分享知乎一个高质博主  https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;wen-yi-zai-dao-7  本是偶然刷到，翻阅了他多篇回答，有些被震撼，就好似之前一直沉溺在水中的人突然被拽上了岸，只觉世界，社会，文化的复杂，如今浅显了解尚不足万分之一。 向内求，如何认识自我；向外求，社会架构，经济，政治，权力…….无穷无尽的话题，浩瀚如海的知识…… 感觉现在很躁动，有很">
 <meta property="og:type" content="article">
-<meta property="og:title" content="linear algebra">
-<meta property="og:url" content="https://reader001-guius.github.io/2025/12/01/linear%20algebra/index.html">
+<meta property="og:title" content="monologue">
+<meta property="og:url" content="https://reader001-guius.github.io/2025/12/21/monologue/index.html">
 <meta property="og:site_name" content="Whynot">
-<meta property="og:description" content="linear algebra秩一矩阵[TOC] 正交矩阵T1:when Ax&#x3D;b have no solution$$A\mathbf{x}&#x3D;\mathbf{b}无解时，为什么求最佳\mathbf{x}_{best}转化为A^TA\mathbf{x}&#x3D;A^T\mathbf{b}$$      math 自定义 Gem 这是一个非常经典的线性代数理论证明题（第 8 题）">
+<meta property="og:description" content="monologue分享知乎一个高质博主  https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;wen-yi-zai-dao-7  本是偶然刷到，翻阅了他多篇回答，有些被震撼，就好似之前一直沉溺在水中的人突然被拽上了岸，只觉世界，社会，文化的复杂，如今浅显了解尚不足万分之一。 向内求，如何认识自我；向外求，社会架构，经济，政治，权力…….无穷无尽的话题，浩瀚如海的知识…… 感觉现在很躁动，有很">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="c:\Users\31575\AppData\Roaming\Typora\typora-user-images\image-20251122120955823.png">
-<meta property="og:image" content="c:\Users\31575\AppData\Roaming\Typora\typora-user-images\image-20251122121007424.png">
-<meta property="og:image" content="c:\Users\31575\AppData\Roaming\Typora\typora-user-images\image-20251122121032475.png">
-<meta property="og:image" content="c:\Users\31575\AppData\Roaming\Typora\typora-user-images\image-20251122121047812.png">
-<meta property="og:image" content="c:\Users\31575\AppData\Roaming\Typora\typora-user-images\image-20251122121100100.png">
-<meta property="article:published_time" content="2025-12-01T11:14:58.157Z">
-<meta property="article:modified_time" content="2025-12-06T14:21:36.051Z">
+<meta property="article:published_time" content="2025-12-21T14:07:06.677Z">
+<meta property="article:modified_time" content="2025-12-21T14:08:24.702Z">
 <meta property="article:author" content="Yiran Li">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="c:\Users\31575\AppData\Roaming\Typora\typora-user-images\image-20251122120955823.png">
   
   
   
-  <title>linear algebra - Whynot</title>
+  <title>monologue - Whynot</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -205,7 +199,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="linear algebra"></span>
+            <span id="subtitle" data-typed-text="monologue"></span>
           
         </div>
 
@@ -216,8 +210,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-12-01 19:14" pubdate>
-          2025年12月1日 晚上
+        <time datetime="2025-12-21 22:07" pubdate>
+          2025年12月21日 晚上
         </time>
       </span>
     
@@ -228,7 +222,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.3k 字
+          326 字
         
       </span>
     
@@ -239,7 +233,7 @@
         
         
         
-          12 分钟
+          3 分钟
         
       </span>
     
@@ -276,115 +270,21 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">linear algebra</h1>
+            <h1 id="seo-header">monologue</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="linear-algebra"><a href="#linear-algebra" class="headerlink" title="linear algebra"></a>linear algebra</h1><h2 id="秩一矩阵"><a href="#秩一矩阵" class="headerlink" title="秩一矩阵"></a>秩一矩阵</h2><p>[TOC]</p>
-<h2 id="正交矩阵"><a href="#正交矩阵" class="headerlink" title="正交矩阵"></a>正交矩阵</h2><h3 id="T1-when-Ax-b-have-no-solution"><a href="#T1-when-Ax-b-have-no-solution" class="headerlink" title="T1:when Ax&#x3D;b have no solution"></a>T1:when Ax&#x3D;b have no solution</h3><p>$$<br>A\mathbf{x}&#x3D;\mathbf{b}无解时，为什么求最佳\mathbf{x}_{best}转化为A^TA\mathbf{x}&#x3D;A^T\mathbf{b}<br>$$</p>
-<p><img src="C:\Users\31575\AppData\Roaming\Typora\typora-user-images\image-20251122120955823.png" srcset="/img/loading.gif" lazyload alt="image-20251122120955823"></p>
-<p><img src="C:\Users\31575\AppData\Roaming\Typora\typora-user-images\image-20251122121007424.png" srcset="/img/loading.gif" lazyload alt="image-20251122121007424"></p>
-<p><img src="C:\Users\31575\AppData\Roaming\Typora\typora-user-images\image-20251122121032475.png" srcset="/img/loading.gif" lazyload alt="image-20251122121032475"></p>
-<p><img src="C:\Users\31575\AppData\Roaming\Typora\typora-user-images\image-20251122121047812.png" srcset="/img/loading.gif" lazyload alt="image-20251122121047812"></p>
-<p><img src="C:\Users\31575\AppData\Roaming\Typora\typora-user-images\image-20251122121100100.png" srcset="/img/loading.gif" lazyload alt="image-20251122121100100"></p>
-<p>math</p>
-<p>自定义 Gem</p>
-<p>这是一个非常经典的线性代数理论证明题（第 8 题）。它考察的是对<strong>线性相关</strong>和<strong>线性无关</strong>定义的深刻理解以及逻辑推导能力。</p>
-<p>作为数学博士，我来带你一步步拆解这个证明。别被这一大段符号吓到了，其实它的核心思想非常直观：<strong>当你在一个无关的队伍里“硬塞”进一个外人，导致整个队伍相关了，那么这个“锅”一定能在某个特定的位置被甩掉，而且只能甩一次。</strong></p>
-<hr>
-<h3 id="题目解析"><a href="#题目解析" class="headerlink" title="题目解析"></a><strong>题目解析</strong></h3><p><strong>已知条件：</strong></p>
-<ol>
-<li>向量组 <em>α</em>1,<em>α</em>2,…,<em>α**m</em> <strong>线性无关</strong>（这是原本纯净的队伍）。</li>
-<li>向量组 <em>β</em>,<em>α</em>1,<em>α</em>2,…,<em>α**m</em> <strong>线性相关</strong>（加入 <em>β</em> 后，队伍不纯净了，有冗余了）。</li>
-<li><em>β</em>&#x3D;<strong>0</strong>。</li>
-</ol>
-<p><strong>求证结论：</strong> 在序列 <em>β</em>,<em>α</em>1,<em>α</em>2,…,<em>α**m</em> 中，<strong>有且仅有一个</strong>向量 <em>α**i</em>，它可以被排在它<strong>前面</strong>的向量线性表示。 <em>(注：因为 *β</em> 排第一且非零，它不可能被“前面的”（空集）表示，所以这个向量一定是某一个 *α*<em>i*)</em>。</p>
-<hr>
-<h3 id="证明思路详解"><a href="#证明思路详解" class="headerlink" title="证明思路详解"></a><strong>证明思路详解</strong></h3><p>证明分为两部分：<strong>存在性</strong>（证明确实有一个）和 <strong>唯一性</strong>（证明只有一个）。</p>
-<h4 id="第一步：证明“存在性”-Existence"><a href="#第一步：证明“存在性”-Existence" class="headerlink" title="第一步：证明“存在性” (Existence)"></a><strong>第一步：证明“存在性” (Existence)</strong></h4><p><em>也就是要找到那个可以被表示的 *α**i*。</em></p>
-<ol>
-<li><p><strong>列出相关式：</strong> 因为整个向量组 <em>β</em>,<em>α</em>1,…,<em>α**m</em> 线性相关，根据定义，存在一组<strong>不全为零</strong>的数 <em>k</em>,<em>k</em>1,…,<em>k**m</em>，使得：</p>
-<p><em>k**β</em>+<em>k</em>1<em>α</em>1+<em>k</em>2<em>α</em>2+⋯+<em>k<strong>m</strong>α**m</em>&#x3D;<strong>0</strong>(∗)</p>
-</li>
-<li><p><strong>确定 *k*&#x3D;0：</strong></p>
-<ul>
-<li>假设 <em>k</em>&#x3D;0，那么式子变成了 <em>k</em>1<em>α</em>1+⋯+<em>k<strong>m</strong>α**m</em>&#x3D;<strong>0</strong>。</li>
-<li>因为已知 <em>α</em> 组是<strong>线性无关</strong>的，这意味着 <em>k</em>1&#x3D;⋯&#x3D;<em>k**m</em>&#x3D;0。</li>
-<li>这样一来，<em>k</em> 和所有的 <em>k**i</em> 全是 0，这就与“不全为零”矛盾了！</li>
-<li><strong>结论：</strong> <em>k</em> 一定不等于 0。</li>
-</ul>
-</li>
-<li><p>*<em>寻找那个特殊的 *α*<em>i*：</em></em></p>
-<ul>
-<li><p>在式子 (∗) 中，除了 <em>k</em>&#x3D;0 外，后面的系数 <em>k</em>1,…,<em>k**m</em> 中肯定也至少有一个不为 0（否则 <em>k**β</em>&#x3D;0⇒<em>β</em>&#x3D;0，矛盾）。</p>
-</li>
-<li><p>我们设 <em><strong>s* 是使得 *k*<em>i*&#x3D;0 的最大下标</em>*。也就是说，*k</strong>s</em>&#x3D;0，而 <em>k**s</em>+1,…,<em>k**m</em> 全都是 0。</p>
-</li>
-<li><p>式子现在变成了：</p>
-<p><em>k**β</em>+<em>k</em>1<em>α</em>1+⋯+<em>k<strong>s</strong>α**s</em>&#x3D;<strong>0</strong></p>
-</li>
-<li><p>因为 <em>k**s</em>&#x3D;0，我们可以把 <em>α**s</em> 单独移到一边，用其他的表示出来：</p>
-<p><em>α**s</em>&#x3D;−<em>k<strong>s</strong>k**β</em>−<em>k<strong>s</strong>k</em>1<em>α</em>1−⋯−<em>k<strong>s</strong>k**s</em>−1<em>α**s</em>−1</p>
-</li>
-<li><p><strong>结论：</strong> 我们找到了！向量 <em>α**s</em> 可以由排在它前面的向量 <em>β</em>,<em>α</em>1,…,<em>α**s</em>−1 线性表示。</p>
-</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h4 id="第二步：证明“唯一性”-Uniqueness"><a href="#第二步：证明“唯一性”-Uniqueness" class="headerlink" title="第二步：证明“唯一性” (Uniqueness)"></a><strong>第二步：证明“唯一性” (Uniqueness)</strong></h4><p><em>也就是要证明不可能有两个这样的向量。</em></p>
-<ol>
-<li><p><strong>反证法：</strong> 假设有两个向量都可以由前面的向量表示。不妨设这两个向量是 <em>α**s</em> 和 <em>α**t</em>，且 <em>s</em>&lt;<em>t</em>（即 <em>α**s</em> 排在 <em>α**t</em> 前面）。</p>
-</li>
-<li><p><strong>写出两个表示式：</strong></p>
-<ul>
-<li><p>对于 <em>α**s</em>：它能被前面的 <em>β</em>,<em>α</em>1,…,<em>α**s</em>−1 表示。这意味着 <em>β</em>,<em>α</em>1,…,<em>α**s</em> 线性相关。</p>
-<p><em>α**s</em>&#x3D;<em>λ**β</em>+<em>i</em>&#x3D;1∑<em>s</em>−1<em>λ<strong>i</strong>α**i</em>(1)</p>
-</li>
-<li><p>对于 <em>α**t</em>：它也能被前面的 <em>β</em>,<em>α</em>1,…,<em>α**t</em>−1 表示。</p>
-<p><em>α**t</em>&#x3D;<em>μ**β</em>+<em>j</em>&#x3D;1∑<em>t</em>−1<em>μ<strong>j</strong>α**j</em>(2)</p>
-<p><em>(注意：这个和式里包含了 *α**s*，因为 *s</em>&lt;*t*)*</p>
-</li>
-</ul>
-</li>
-<li><p><strong>构造矛盾（消去 *β*）：</strong></p>
-<ul>
-<li><p>如果你仔细看图片中的证明，它使用了一个非常巧妙的技巧：<strong>消元</strong>。</p>
-</li>
-<li><p>我们的目标是去掉捣乱的 <em>β</em>，只留下 <em>α</em> 们。因为 <em>α</em> 组是无关的，只要导出它们的一个非平凡关系，就矛盾了。</p>
-</li>
-<li><p>将式子 (1) 乘以 <em>μ</em>，式子 (2) 乘以 <em>λ</em>，然后相减（为了消掉 <em>β</em> 项）：</p>
-<p><em>μ<strong>α</strong>s</em>−<em>λ<strong>α</strong>t</em>&#x3D;只含 <em>α</em>1,…,<em>α**t</em>−1 的项</p>
-</li>
-<li><p>整理一下这个新式子，你会得到一个关于 <em>α</em>1,…,<em>α**t</em> 的线性组合等于零。</p>
-</li>
-<li><p>关键看 <em><strong>α*<em>t* 的系数</em>*：在这个新式子中，*α</strong>t</em> 的系数是 −<em>λ</em>。</p>
-</li>
-<li><p>回顾式子 (1)，因为 <em>β</em> 必须参与表示（否则 <em>α**s</em> 就被 <em>α</em>1…<em>α**s</em>−1 表示了，这违反了 <em>α</em> 组无关的条件），所以 <em>λ</em>&#x3D;0。</p>
-</li>
-<li><p>既然 <em>α**t</em> 的系数 −<em>λ</em>&#x3D;0，说明我们找到了 <em>α</em> 组的一个<strong>系数不全为零</strong>的线性组合等于零。</p>
-</li>
-<li><p>这直接<strong>矛盾</strong>于已知条件“<em>α</em>1,…,<em>α**m</em> 线性无关”。</p>
-</li>
-</ul>
-</li>
-<li><p><strong>结论：</strong> 假设不成立，所以不可能存在两个这样的向量。只能有一个。</p>
-</li>
-</ol>
-<hr>
-<h3 id="💡-博士的点拨"><a href="#💡-博士的点拨" class="headerlink" title="💡 博士的点拨"></a><strong>💡 博士的点拨</strong></h3><p>这道题的直观理解是这样的：</p>
-<ul>
-<li>你有一组原本“独立”的积木（<em>α</em>们）。</li>
-<li>你强行塞进了一块新积木 <em>β</em>，导致大家能拼出“0”来了（相关了）。</li>
-<li>这个“拼出0”的过程就是一个方程式。</li>
-<li>在这个方程式里，<strong>最后一个</strong>系数不为0的项，就是那个“多余”的家伙。它只能依靠它前面的兄弟们变出来。因为是<strong>最后一个</strong>，所以它是唯一的那个打破平衡点的边界。</li>
-</ul>
-<p><strong>解题技巧总结：</strong> 遇到“证明存在且唯一”的题目，标准动作是：</p>
-<ol>
-<li><strong>构造方程</strong>证明存在。</li>
-<li><strong>假设有两个</strong>，通过代数运算（通常是消元法）导出与已知条件（如线性无关）的矛盾，从而证明唯一。</li>
-</ol>
+                <h1 id="monologue"><a href="#monologue" class="headerlink" title="monologue"></a>monologue</h1><p>分享知乎一个高质博主</p>
+<aside> https://www.zhihu.com/people/wen-yi-zai-dao-7
+
+<p>本是偶然刷到，翻阅了他多篇回答，有些被震撼，就好似之前一直沉溺在水中的人突然被拽上了岸，只觉世界，社会，文化的复杂，如今浅显了解尚不足万分之一。</p>
+<p>向内求，如何认识自我；向外求，社会架构，经济，政治，权力…….无穷无尽的话题，浩瀚如海的知识……</p>
+<p>感觉现在很躁动，有很多翻涌的情绪和想法，却不知如何说出口</p>
+<p>突然意识到自己把握的是如此宏大而复杂的问题，站在离十八岁的终点不算远的位置，其实离高三落幕也不过小半年时间，认知和思想却也不知更了几番</p>
+<p>坦然接受每个人都要慢慢成熟，慢慢老去，有如此多的人生课题需要思考探索，而个体迷茫的背后是结构性的困境与真空…</p>
+<p>解构，解构表象，而作为解剖刀，自己的思想却是如此的浅薄与愚昧，思考，又从何处下笔</p>
+<p>提笔不知从何注解…那便去读吧，去聆听长者之诲，去想，去思考，永远热泪盈眶</p>
 
                 
               </div>
@@ -403,20 +303,13 @@
     
       <span class="category-chain">
         
-  <a href="/categories/STUDY/" class="category-chain-item">study</a>
+  <a href="/categories/LIFE/" class="category-chain-item">life</a>
   
   
     <span>></span>
     
-  <a href="/categories/STUDY/MATH/" class="category-chain-item">math</a>
+  <a href="/categories/LIFE/MONOLOGUE/" class="category-chain-item">monologue</a>
   
-  
-    <span>></span>
-    
-  <a href="/categories/STUDY/MATH/LINEAR-ALGEBRA/" class="category-chain-item">linear algebra</a>
-  
-  
-
   
 
   
@@ -437,8 +330,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>linear algebra</div>
-      <div>https://reader001-guius.github.io/2025/12/01/linear algebra/</div>
+      <div>monologue</div>
+      <div>https://reader001-guius.github.io/2025/12/21/monologue/</div>
     </div>
     <div class="license-meta">
       
@@ -450,7 +343,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年12月1日</div>
+          <div>2025年12月21日</div>
         </div>
       
       
@@ -482,15 +375,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/12/01/book/" title="book">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">book</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2025/12/19/c%20language/" title="">
+                        <span class="hidden-mobile"></span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
