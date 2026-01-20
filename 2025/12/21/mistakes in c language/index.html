@@ -19,17 +19,17 @@
   <meta name="author" content="Yiran Li">
   <meta name="keywords" content="">
   
-    <meta name="description" content="mistakes in c language一.循环相关问题（1）循环算泰勒级数123456789double sum&#x3D;0;   int n;   double x;   scanf(&quot;%lf %d&quot;,&amp;x,&amp;n);   sum&#x3D;x;   for(int i&#x3D;1;i&lt;n;i++)&#123;       x&#x3D;(double)x*x*x*(-1.0)&#x2F;(do">
+    <meta name="description" content="mistakes in c language一.循环相关问题（1）1.循环算泰勒级数123456789double sum&#x3D;0;   int n;   double x;   scanf(&quot;%lf %d&quot;,&amp;x,&amp;n);   sum&#x3D;x;   for(int i&#x3D;1;i&lt;n;i++)&#123;       x&#x3D;(double)x*x*x*(-1.0)&#x2F;(">
 <meta property="og:type" content="article">
 <meta property="og:title" content="the c language">
 <meta property="og:url" content="https://reader001-guius.github.io/2025/12/21/mistakes%20in%20c%20language/index.html">
 <meta property="og:site_name" content="Whynot">
-<meta property="og:description" content="mistakes in c language一.循环相关问题（1）循环算泰勒级数123456789double sum&#x3D;0;   int n;   double x;   scanf(&quot;%lf %d&quot;,&amp;x,&amp;n);   sum&#x3D;x;   for(int i&#x3D;1;i&lt;n;i++)&#123;       x&#x3D;(double)x*x*x*(-1.0)&#x2F;(do">
+<meta property="og:description" content="mistakes in c language一.循环相关问题（1）1.循环算泰勒级数123456789double sum&#x3D;0;   int n;   double x;   scanf(&quot;%lf %d&quot;,&amp;x,&amp;n);   sum&#x3D;x;   for(int i&#x3D;1;i&lt;n;i++)&#123;       x&#x3D;(double)x*x*x*(-1.0)&#x2F;(">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="c:\Users\31575\AppData\Roaming\Typora\typora-user-images\image-20251219160028954.png">
 <meta property="og:image" content="c:\Users\31575\AppData\Roaming\Typora\typora-user-images\image-20251219160335403.png">
 <meta property="article:published_time" content="2025-12-21T14:17:56.105Z">
-<meta property="article:modified_time" content="2025-12-21T14:18:26.742Z">
+<meta property="article:modified_time" content="2025-12-24T02:36:22.676Z">
 <meta property="article:author" content="Yiran Li">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="c:\Users\31575\AppData\Roaming\Typora\typora-user-images\image-20251219160028954.png">
@@ -225,7 +225,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3.7k 字
+          7.1k 字
         
       </span>
     
@@ -236,7 +236,7 @@
         
         
         
-          31 分钟
+          59 分钟
         
       </span>
     
@@ -278,11 +278,16 @@
             
               <div class="markdown-body">
                 
-                <h1 id="mistakes-in-c-language"><a href="#mistakes-in-c-language" class="headerlink" title="mistakes in c language"></a>mistakes in c language</h1><h2 id="一-循环相关问题"><a href="#一-循环相关问题" class="headerlink" title="一.循环相关问题"></a>一.循环相关问题</h2><h3 id="（1）循环算泰勒级数"><a href="#（1）循环算泰勒级数" class="headerlink" title="（1）循环算泰勒级数"></a>（1）循环算泰勒级数</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">double</span> sum=<span class="hljs-number">0</span>;<br>   <span class="hljs-type">int</span> n;<br>   <span class="hljs-type">double</span> x;<br>   <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%lf %d&quot;</span>,&amp;x,&amp;n);<br>   sum=x;<br>   <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">1</span>;i&lt;n;i++)&#123;<br>       x=(<span class="hljs-type">double</span>)x*x*x*(<span class="hljs-number">-1.0</span>)/(<span class="hljs-type">double</span>)((<span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>)*(<span class="hljs-number">2</span>*i));<br>       sum+=x;     <br>   &#125;<br></code></pre></td></tr></table></figure>
+                <h1 id="mistakes-in-c-language"><a href="#mistakes-in-c-language" class="headerlink" title="mistakes in c language"></a>mistakes in c language</h1><h2 id="一-循环相关问题"><a href="#一-循环相关问题" class="headerlink" title="一.循环相关问题"></a>一.循环相关问题</h2><h3 id="（1）1-循环算泰勒级数"><a href="#（1）1-循环算泰勒级数" class="headerlink" title="（1）1.循环算泰勒级数"></a>（1）1.循环算泰勒级数</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">double</span> sum=<span class="hljs-number">0</span>;<br>   <span class="hljs-type">int</span> n;<br>   <span class="hljs-type">double</span> x;<br>   <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%lf %d&quot;</span>,&amp;x,&amp;n);<br>   sum=x;<br>   <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">1</span>;i&lt;n;i++)&#123;<br>       x=(<span class="hljs-type">double</span>)x*x*x*(<span class="hljs-number">-1.0</span>)/(<span class="hljs-type">double</span>)((<span class="hljs-number">2</span>*i+<span class="hljs-number">1</span>)*(<span class="hljs-number">2</span>*i));<br>       sum+=x;     <br>   &#125;<br></code></pre></td></tr></table></figure>
 
 <p>注意！x是随每次循环而变化的！所以不能一个变量用到底！设一个term保存x的值</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">double</span> sum = <span class="hljs-number">0</span>;<br>    <span class="hljs-type">int</span> n;<br>    <span class="hljs-type">double</span> x;<br>    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%lf %d&quot;</span>, &amp;x, &amp;n);  <span class="hljs-comment">// 注意：double类型使用%lf</span><br>    <br>    <span class="hljs-type">double</span> term = x;  <span class="hljs-comment">// 第一项</span><br>    sum = term;<br>    <br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i = <span class="hljs-number">1</span>; i &lt; n; i++) &#123;<br>        <span class="hljs-comment">// 计算下一项：每一项是前一项乘以 -x^2/((2i)*(2i+1))</span><br>        term = term * (<span class="hljs-number">-1.0</span>) * x * x / ((<span class="hljs-number">2.0</span>*i) * (<span class="hljs-number">2.0</span>*i + <span class="hljs-number">1</span>));<br>        sum += term;  <span class="hljs-comment">// 注意：应该是+=，不是=+</span><br>    &#125;<br></code></pre></td></tr></table></figure>
 
+<h3 id="（1）2-循环算阶乘"><a href="#（1）2-循环算阶乘" class="headerlink" title="（1）2.循环算阶乘"></a>（1）2.循环算阶乘</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">int</span> mult=<span class="hljs-number">1</span>;<br>        <span class="hljs-type">int</span> sum=<span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;n;i++)&#123;<br>            <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> j=<span class="hljs-number">1</span>;j&lt;=n;j++)&#123;<br>                mult=mult*j;<br>            &#125;<br>            sum=sum+mult;<br>        &#125;<br></code></pre></td></tr></table></figure>
+
+<p>你想清楚循环的每个过程！！！</p>
+<p>在每次阶乘算完，mult得归为1！</p>
+<p>不要忘记重置变量！</p>
 <h3 id="（2）循环时循环变量"><a href="#（2）循环时循环变量" class="headerlink" title="（2）循环时循环变量"></a>（2）循环时循环变量</h3><ol>
 <li>注意：</li>
 </ol>
@@ -326,7 +331,22 @@
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> k = <span class="hljs-number">0</span>; str1[k] != <span class="hljs-string">&#x27;\0&#x27;</span>; k++) &#123;<br>        <span class="hljs-keyword">if</span> (str1[k] == str1[k + <span class="hljs-number">1</span>]) &#123;<br>            <span class="hljs-comment">// 发现重复，后面所有字符（包括结束符\0）前移</span><br>            <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> l = k; str1[l] != <span class="hljs-string">&#x27;\0&#x27;</span>; l++) &#123;<br>                str1[l] = str1[l + <span class="hljs-number">1</span>];<br>            &#125;<br>            k--; <span class="hljs-comment">// 重要：回退一步，检查新移过来的字符是否依然重复</span><br>        &#125;<br>    &#125;<br></code></pre></td></tr></table></figure>
 
 <p>​	直接查找\0即可！</p>
-<h2 id="二-细节问题"><a href="#二-细节问题" class="headerlink" title="二.细节问题"></a>二.细节问题</h2><h3 id="（1）-scanf"><a href="#（1）-scanf" class="headerlink" title="（1） scanf+&amp;"></a>（1） scanf+&amp;</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>,arr2[i]);<br></code></pre></td></tr></table></figure>
+<h3 id="（5）循环数组末尾＋’-0‘"><a href="#（5）循环数组末尾＋’-0‘" class="headerlink" title="（5）循环数组末尾＋’\0‘"></a>（5）循环数组末尾＋’\0‘</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">void</span> <span class="hljs-title function_">my_strcat</span><span class="hljs-params">(<span class="hljs-type">char</span> arr1[],<span class="hljs-type">char</span> arr2[])</span>&#123;<br>    <span class="hljs-type">int</span> len=my_strlen(arr1);<br>    <span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;<br>    <span class="hljs-keyword">for</span>(;arr2[i]!=<span class="hljs-string">&#x27;\0&#x27;</span>;i++)&#123;<br>        arr1[len+i]=arr2[i];<br>    &#125;<br>    arr1[len+i+<span class="hljs-number">1</span>]=<span class="hljs-string">&#x27;\0&#x27;</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>你想清楚，加’\0’的时候i需不需要再＋1！</p>
+<p>当i读到’\0’的那一位的时候，就自动跳出来了！arr1[len+i]没有写值进去！不需要再i+1了！</p>
+<h3 id="（6）循环时改变指针指向"><a href="#（6）循环时改变指针指向" class="headerlink" title="（6）循环时改变指针指向"></a>（6）循环时改变指针指向</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;n;i++)&#123;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> j=<span class="hljs-number">0</span>;j&lt;n<span class="hljs-number">-1</span>-i;j++)&#123;<br>           <span class="hljs-keyword">if</span>(<span class="hljs-built_in">strcmp</span>(arr[j],arr[j+<span class="hljs-number">1</span>])&gt;<span class="hljs-number">0</span>)&#123;<br>            point[j]=arr[j+<span class="hljs-number">1</span>];<br>            point[j+<span class="hljs-number">1</span>]=arr[j];<br>           &#125; <br>        &#125;<br>    &#125;<br></code></pre></td></tr></table></figure>
+
+<p>你要想清楚，当通过改变指针而不改变字符串本身位置时，你在for循环比较就应该比较的是对应的指针！而非没有改变位置的arr，这没有意义！</p>
+<h3 id="（7）循环时-的问题"><a href="#（7）循环时-的问题" class="headerlink" title="（7）循环时{}的问题"></a>（7）循环时{}的问题</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">int</span> <span class="hljs-title function_">find_scores</span><span class="hljs-params">(<span class="hljs-type">int</span> scores[],<span class="hljs-type">int</span> n,<span class="hljs-type">int</span> target)</span>&#123;<br>    <span class="hljs-type">int</span> is_true=<span class="hljs-number">0</span>;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;n;i++)&#123;<br>        <span class="hljs-keyword">if</span>(scores[i]==target)&#123;<br>            is_true=<span class="hljs-number">1</span>;<br>            <span class="hljs-keyword">break</span>;<br>        &#125;<br>        <span class="hljs-keyword">return</span> is_true;<br>    &#125;  # &#125;打错位置了！！！你把每个大括号的区间看清楚！<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>看清楚！！！for循环终止的}在哪里！！！</p>
+<p>应该在return前面！</p>
+<h3 id="（8）循环变量初始-0还是1得考虑清楚所有情况！"><a href="#（8）循环变量初始-0还是1得考虑清楚所有情况！" class="headerlink" title="（8）循环变量初始&#x3D;0还是1得考虑清楚所有情况！"></a>（8）循环变量初始&#x3D;0还是1得考虑清楚所有情况！</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">1</span>;i&lt;n;i++)&#123;<br>       node* next=(node*)<span class="hljs-built_in">malloc</span>(<span class="hljs-keyword">sizeof</span>(node));<br>       next-&gt;data=scores[i];<br>       next-&gt;next=<span class="hljs-literal">NULL</span>;<br>       <span class="hljs-keyword">if</span>(head==<span class="hljs-literal">NULL</span>)&#123;<br>           head=(node*)<span class="hljs-built_in">malloc</span>(<span class="hljs-keyword">sizeof</span>(node));<br>           head-&gt;data=scores[<span class="hljs-number">0</span>];<br>           head-&gt;next=tail;<br>           tail=next;<br>			&#125;<br></code></pre></td></tr></table></figure>
+
+<p>当i&#x3D;1时，n&#x3D;1时，循环进不去！！！</p>
+<p>一定考虑全了！</p>
+<h3 id="（9）各个循环变量"><a href="#（9）各个循环变量" class="headerlink" title="（9）各个循环变量"></a>（9）各个循环变量</h3><h5 id="1-区别i-0-i"><a href="#1-区别i-0-i" class="headerlink" title="1.区别i&#x3D;0;i&lt;n与i&#x3D;1;i&lt;&#x3D;n"></a>1.区别i&#x3D;0;i&lt;n与i&#x3D;1;i&lt;&#x3D;n</h5><h5 id="2-区别i"><a href="#2-区别i" class="headerlink" title="2.区别i&lt;n与i&lt;&#x3D;n-1"></a>2.区别i&lt;n与i&lt;&#x3D;n-1</h5><h5 id="3-区别circle-1，while-circle-n-1"><a href="#3-区别circle-1，while-circle-n-1" class="headerlink" title="3.区别circle&#x3D;1，while(circle!&#x3D;n-1)"></a>3.区别circle&#x3D;1，while(circle!&#x3D;n-1)</h5><h2 id="二-细节问题"><a href="#二-细节问题" class="headerlink" title="二.细节问题"></a>二.细节问题</h2><h3 id="（1）-scanf"><a href="#（1）-scanf" class="headerlink" title="（1） scanf+&amp;"></a>（1） scanf+&amp;</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>,arr2[i]);<br></code></pre></td></tr></table></figure>
 
 <p>注意！加&amp;！！！！！</p>
 <h3 id="（2）初始化变量"><a href="#（2）初始化变量" class="headerlink" title="（2）初始化变量"></a>（2）初始化变量</h3><p>命名变量不要忘记初始化！</p>
@@ -337,7 +357,15 @@
 <h3 id="（5）看清楚改变哪个变量"><a href="#（5）看清楚改变哪个变量" class="headerlink" title="（5）看清楚改变哪个变量"></a>（5）看清楚改变哪个变量</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">20</span>;i++)&#123;<br>    arr2[i]=arr[i];<br>    <span class="hljs-keyword">if</span>(i==<span class="hljs-number">19</span>)&#123;<br>        arr[i+<span class="hljs-number">1</span>]=<span class="hljs-string">&#x27;\0&#x27;</span>;<br>    &#125;<br>&#125;&#125;<br></code></pre></td></tr></table></figure>
 
 <p>要改的是arr2!不是arr</p>
-<h1 id="三-审题问题"><a href="#三-审题问题" class="headerlink" title="三.审题问题"></a>三.审题问题</h1><h1 id="四-逻辑思路问题"><a href="#四-逻辑思路问题" class="headerlink" title="四.逻辑思路问题"></a>四.逻辑思路问题</h1><h3 id="（1）考虑情况不全"><a href="#（1）考虑情况不全" class="headerlink" title="（1）考虑情况不全"></a>（1）考虑情况不全</h3><h5 id="1-求两个矩形的交集"><a href="#1-求两个矩形的交集" class="headerlink" title="1.求两个矩形的交集"></a>1.求两个矩形的交集</h5><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">int</span> dx,dy;<br>        <span class="hljs-keyword">if</span>(axsml&lt;bxsml)&#123;<br>            dx=axbig-bxsml;<br>        &#125;<br>        <span class="hljs-keyword">else</span>&#123;<br>            dx=bxbig-axsml;<br>        &#125;<br>        <span class="hljs-keyword">if</span>(bysml&gt;aysml)&#123;<br>            dy=aybig-bysml;<br>        &#125;<br>        <span class="hljs-keyword">else</span>&#123;<br>            dy=bybig-aysml;<br>        &#125;<br>        <span class="hljs-type">int</span> squ=dx*dy;<br></code></pre></td></tr></table></figure>
+<h3 id="（6）字符串数组末尾不要忘记加’-0’！"><a href="#（6）字符串数组末尾不要忘记加’-0’！" class="headerlink" title="（6）字符串数组末尾不要忘记加’\0’！"></a>（6）字符串数组末尾不要忘记加’\0’！</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">void</span> <span class="hljs-title function_">my_strcpy</span><span class="hljs-params">(<span class="hljs-type">char</span> arr1[],<span class="hljs-type">char</span> arr2[])</span>&#123;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;arr1[i]!=<span class="hljs-string">&#x27;\0&#x27;</span>;i++)&#123;<br>        arr2[i]=arr1[i];<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>不要忘记在arr2末尾＋’\0’！</p>
+<h1 id="三-审题问题"><a href="#三-审题问题" class="headerlink" title="三.审题问题"></a>三.审题问题</h1><h3 id="（1）求阶乘之和"><a href="#（1）求阶乘之和" class="headerlink" title="（1）求阶乘之和"></a>（1）求阶乘之和</h3><p>​	输入正整数n（1-10）,求1-n的阶乘之和</p>
+<p>​	想清楚！是阶乘的和！！！！！！</p>
+<p>​	先求阶乘，然后再求和！</p>
+<h3 id="（2）字符串拼接"><a href="#（2）字符串拼接" class="headerlink" title="（2）字符串拼接"></a>（2）字符串拼接</h3><p>注意：使用空格字符来表示字符串的结束。<br>例如source指向位置，依次保存了字符’a’，字符’b’，字符空格’ ‘，字符’c’，则source指向的字符串为”ab”</p>
+<p>审题！所有字符串结束标志都是空格！！！</p>
+<h1 id="四-逻辑思路问题"><a href="#四-逻辑思路问题" class="headerlink" title="四.逻辑思路问题"></a>四.逻辑思路问题</h1><h3 id="（1）考虑情况不全"><a href="#（1）考虑情况不全" class="headerlink" title="（1）考虑情况不全"></a>（1）考虑情况不全</h3><h5 id="1-求两个矩形的交集"><a href="#1-求两个矩形的交集" class="headerlink" title="1.求两个矩形的交集"></a>1.求两个矩形的交集</h5><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">int</span> dx,dy;<br>        <span class="hljs-keyword">if</span>(axsml&lt;bxsml)&#123;<br>            dx=axbig-bxsml;<br>        &#125;<br>        <span class="hljs-keyword">else</span>&#123;<br>            dx=bxbig-axsml;<br>        &#125;<br>        <span class="hljs-keyword">if</span>(bysml&gt;aysml)&#123;<br>            dy=aybig-bysml;<br>        &#125;<br>        <span class="hljs-keyword">else</span>&#123;<br>            dy=bybig-aysml;<br>        &#125;<br>        <span class="hljs-type">int</span> squ=dx*dy;<br></code></pre></td></tr></table></figure>
 
 <p>您的代码计算 dx（交集宽度）的逻辑如下：</p>
 <figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs abnf">// 计算交集宽度 dx<br>if(axsml&lt;bxsml)&#123;<br>    dx<span class="hljs-operator">=</span>axbig-bxsml<span class="hljs-comment">; </span><br>&#125;<br>else&#123;<br>    dx<span class="hljs-operator">=</span>bxbig-axsml<span class="hljs-comment">;</span><br>&#125;<br></code></pre></td></tr></table></figure>
@@ -355,6 +383,20 @@
 <li><strong>问题</strong>：’Z’ 的 ASCII 码加 4 会变成一些奇怪的符号（如 <code>^</code>），而不是 ‘D’。</li>
 <li><strong>解决</strong>：你需要判断字符是否超过了 ‘Z’（或小写的 ‘z’）。如果超过了，需要减去 26 重新回到字母表的开头。</li>
 </ul>
+<h5 id="3-循环链表极端情况"><a href="#3-循环链表极端情况" class="headerlink" title="3.循环链表极端情况"></a>3.循环链表极端情况</h5><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-comment">// 假设此时 later 已经指向了待删除的节点 A</span><br><span class="hljs-keyword">if</span>(circle==m)&#123;<br>    node* temp=later;    <span class="hljs-comment">// 此时 temp = 节点 A 的地址</span><br>    later=later-&gt;next;   <span class="hljs-comment">// 此时 later 变成了 节点 B (A 的下一个)</span><br>    num-&gt;next=later;     <span class="hljs-comment">// A 的前驱指向了 B，逻辑上把 A 踢出了链表</span><br>    <br>    <span class="hljs-comment">// --- 下面这三行是关键 ---</span><br>    num=num-&gt;next;       <span class="hljs-comment">// num 移到了 B</span><br>    later=later-&gt;next;   <span class="hljs-comment">// later 移到了 C (B 的下一个)</span><br>    <br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d &quot;</span>,temp-&gt;data);<br>    <span class="hljs-built_in">free</span>(temp);          <span class="hljs-comment">// 释放了 A</span><br>    <br>    circle=<span class="hljs-number">0</span>;<br>    sum++;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h5 id="4-素数判断"><a href="#4-素数判断" class="headerlink" title="4.素数判断"></a>4.素数判断</h5><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">int</span> <span class="hljs-title function_">sushu</span><span class="hljs-params">(<span class="hljs-type">int</span> n)</span>&#123;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">2</span>;i&lt;n;i++)&#123;<br>        <span class="hljs-keyword">if</span>(n%i==<span class="hljs-number">0</span>)&#123;<br>            <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;<br>        &#125;<br>    &#125;<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>要考虑清楚取1，2特殊值的情况</p>
+<p>重视边界情况</p>
+<h5 id="5-特殊值处理"><a href="#5-特殊值处理" class="headerlink" title="5.特殊值处理"></a>5.特殊值处理</h5><p>一个数如果恰好等于它的因子之和，就被成为完数。<br>例如6的因子为1,2,3，而6&#x3D;1+2+3，所以6是一个完数。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">int</span> <span class="hljs-title function_">find_number</span><span class="hljs-params">(<span class="hljs-type">int</span> n)</span>&#123;<br>    <span class="hljs-type">int</span> sum=<span class="hljs-number">0</span>;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">1</span>;i&lt;n;i++)&#123;          <br>    <span class="hljs-keyword">if</span>(n%i==<span class="hljs-number">0</span>)&#123;<br>    sum=sum+i;<br>    &#125;            <br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>考虑清楚特殊值1！</p>
+<h5 id="6-字符串删除"><a href="#6-字符串删除" class="headerlink" title="6.字符串删除"></a>6.字符串删除</h5><p>考虑清楚所有异常情况！！！</p>
+<p><strong>缺少异常处理</strong>：题目明确要求：遇到 <code>s</code> 为 <code>null</code> 或 <code>n</code> 为负数等异常情况，必须输出 <code>&quot;error&quot;</code>。</p>
+<p><strong><code>n</code> 的越界检查</strong>：如果 <code>n</code> 超过了当前字符串的长度（<code>sum</code>），你的代码会尝试从非法位置开始操作，这属于异常情况。</p>
+<p><strong>删除长度 <code>len</code> 的修正</strong>：如果 <code>n + len</code> 超过了 <code>sum</code>（即你想删掉 100 个字符，但后面只剩 2 个了），<code>s[i]</code> 就会去访问空格之后的未知内存，这会导致程序崩溃或逻辑错误。</p>
 <h3 id="（2）考虑逻辑不对"><a href="#（2）考虑逻辑不对" class="headerlink" title="（2）考虑逻辑不对"></a>（2）考虑逻辑不对</h3><h5 id="1-‘-’和‘-’的使用"><a href="#1-‘-’和‘-’的使用" class="headerlink" title="1.‘||’和‘&amp;&amp;’的使用"></a>1.‘||’和‘&amp;&amp;’的使用</h5><p>检查输入字符是否为字母</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-keyword">if</span>(arr[i]&lt;<span class="hljs-string">&#x27;a&#x27;</span>||arr[i]&gt;<span class="hljs-string">&#x27;z&#x27;</span>||arr[i]&lt;<span class="hljs-string">&#x27;A&#x27;</span>||arr[i]&gt;<span class="hljs-string">&#x27;Z&#x27;</span>)&#123;<br>            <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;error&quot;</span>);<br>            <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>        &#125;<br>        <span class="hljs-keyword">if</span>(arr[i]&gt;=<span class="hljs-string">&#x27;w&#x27;</span>||arr[i]&gt;=<span class="hljs-string">&#x27;W&#x27;</span>)&#123;<br>            arr[i]=arr[i]<span class="hljs-number">-22</span>;<br>        &#125;<br></code></pre></td></tr></table></figure>
 
@@ -366,6 +408,72 @@
 
 <p>同样道理，所有小写字母都大于W！</p>
 <p>所以应该分开来处理！</p>
+<h5 id="2-约翰夫环"><a href="#2-约翰夫环" class="headerlink" title="2.约翰夫环"></a>2.约翰夫环</h5><p>别气馁，这简直是所有程序员在处理链表和循环逻辑时都会遇到的“入行仪式”。这种“差一错误”（Off-by-one error）在约瑟夫环里最容易爆发。</p>
+<p>要严密地解决这种逻辑，不能靠“直觉”，要靠<strong>一套标准的“边界工程方法”</strong>。以下是三条保命准则：</p>
+<hr>
+<h3 id="1-确立“指针含义”的单一性（哨兵思维）"><a href="#1-确立“指针含义”的单一性（哨兵思维）" class="headerlink" title="1. 确立“指针含义”的单一性（哨兵思维）"></a>1. 确立“指针含义”的单一性（哨兵思维）</h3><p>在你的代码里，逻辑乱是因为 <code>later</code> 有时代表“正在数的那个人”，有时又代表“数完之后跳过去的那个人”。</p>
+<p><strong>严密的解决办法：</strong> 永远让指针指向**“当前正在处理（数数）的人”**。</p>
+<ul>
+<li><strong>规则：</strong> 先<strong>判断</strong>这个人的编号，再<strong>决定</strong>是移动还是删除。</li>
+<li><strong>口诀：</strong> “先判断，再位移”。</li>
+</ul>
+<hr>
+<h3 id="2-画出“状态转换图”（纸笔大法）"><a href="#2-画出“状态转换图”（纸笔大法）" class="headerlink" title="2. 画出“状态转换图”（纸笔大法）"></a>2. 画出“状态转换图”（纸笔大法）</h3><p>不要在脑子里跑代码！拿出一张纸，画 3 个圈（$n&#x3D;3$），假设 $m&#x3D;2$。</p>
+<p><strong>第一步：初始状态</strong></p>
+<ul>
+<li><code>prev</code> 指向 3，<code>curr</code> 指向 1。</li>
+<li><code>circle = 1</code>（代表 1 号正在报“1”）。</li>
+</ul>
+<p><strong>第二步：逻辑演进</strong></p>
+<ul>
+<li><code>circle</code> (1) 不等于 $m$ (2) $\rightarrow$ 两个指针<strong>后移</strong>。</li>
+<li><code>prev</code> 指向 1，<code>curr</code> 指向 2。</li>
+<li><code>circle</code> 变成 2。</li>
+</ul>
+<p><strong>第三步：触发删除</strong></p>
+<ul>
+<li><code>circle</code> (2) 等于 $m$ (2) $\rightarrow$ <strong>执行删除</strong>。</li>
+<li><code>prev-&gt;next = curr-&gt;next</code>（1 指向 3）。</li>
+<li><code>free(curr)</code>。</li>
+<li><strong>关键：</strong> 让 <code>curr</code> 重新指向 <code>prev-&gt;next</code>（即 3 号）。</li>
+<li><strong>重置：</strong> <code>circle = 1</code>（此时 3 号正在报“1”）。</li>
+</ul>
+<p><strong>如果你在脑子里过不完这三步，代码里一定会多跳或少跳。</strong></p>
+<hr>
+<h3 id="3-结构化你的-while-循环（分而治之）"><a href="#3-结构化你的-while-循环（分而治之）" class="headerlink" title="3. 结构化你的 while 循环（分而治之）"></a>3. 结构化你的 <code>while</code> 循环（分而治之）</h3><p>一个严密的约瑟夫环 <code>while</code> 循环应该长这样，它只有两条清晰的路径：</p>
+<p>C</p>
+<figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs arcade"><span class="hljs-keyword">while</span> (<span class="hljs-built_in">sum</span> &lt; n) &#123;<br>    <span class="hljs-keyword">if</span> (circle == m) &#123;<br>        <span class="hljs-comment">// 路径 A：删除逻辑</span><br>        <span class="hljs-comment">// 1. 打印并删除 curr</span><br>        <span class="hljs-comment">// 2. 只有此时 sum++</span><br>        <span class="hljs-comment">// 3. curr 跳到下一个人，但 prev 别动！</span><br>        <span class="hljs-comment">// 4. circle 重置为 1</span><br>    &#125; <span class="hljs-keyword">else</span> &#123;<br>        <span class="hljs-comment">// 路径 B：报数逻辑</span><br>        <span class="hljs-comment">// 1. prev = curr, curr = curr-&gt;next</span><br>        <span class="hljs-comment">// 2. circle++</span><br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>为什么这样写就严密了？</p>
+<p>因为你把“报数移动”和“删除移动”彻底解耦了。删人的时候不报数，报数的时候不删人。这样永远不会出现“连跳”两格的情况。</p>
+<hr>
+<h3 id="4-终极自检清单"><a href="#4-终极自检清单" class="headerlink" title="4. 终极自检清单"></a>4. 终极自检清单</h3><p>当你写完后，用以下三个极端情况代入检查：</p>
+<ul>
+<li><strong>$m &#x3D; 1$：</strong> 每个人报 1 就死。检查你的代码会不会删掉第一个人后顺利跳到第二个人。</li>
+<li><strong>只剩 2 个人时：</strong> 检查 <code>prev</code> 和 <code>curr</code> 是否会指向同一个地方导致死循环。</li>
+<li><strong>$m &gt; n$：</strong> 检查你的指针是否能跨过 <code>head</code> 继续正常绕圈。</li>
+</ul>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>你现在的痛苦是因为你想通过“一次性位移”搞定所有情况。<strong>真正的严密是：把每一步拆成最小的动作。</strong></p>
+<p>你想不想试着用我上面写的那个 <code>if...else...</code> 结构，把你自己的代码重新整理一遍？只要结构对了，你那几个多一个少一个的 bug 会瞬间消失。</p>
+<h6 id="Q1-循环讨论的问题"><a href="#Q1-循环讨论的问题" class="headerlink" title="Q1:循环讨论的问题"></a>Q1:循环讨论的问题</h6><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-keyword">if</span>(circle==m)&#123;<br>        node* temp=num-&gt;next;<br>        num-&gt;next=later;<br>        num=num-&gt;next;<br>        later=later-&gt;next;<br>        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d &quot;</span>,temp-&gt;data);<br>        <span class="hljs-built_in">free</span>(temp);<br>        circle=<span class="hljs-number">0</span>;<br>        sum++;<br>     &#125;<br></code></pre></td></tr></table></figure>
+
+<p>你要想清楚，在m点删节点的时候，前驱节点num需不需要在删的同时再跳到后面节点去。</p>
+<p>你代入情况分析，如果不跳的话，下一轮刚好在删的节点的后一个，如果跳了那就多了一个！！！</p>
+<h6 id="Q2：设置节点位置问题"><a href="#Q2：设置节点位置问题" class="headerlink" title="Q2：设置节点位置问题"></a>Q2：设置节点位置问题</h6><p>不要设一个前置，一个后置，这样的话，如果只有两个节点，后置一定会移动到已删除的节点上！</p>
+<p>规律总结：前后两个节点间隔位置只能差1，不能差2！</p>
+<h6 id="Q3：循环变量问题"><a href="#Q3：循环变量问题" class="headerlink" title="Q3：循环变量问题"></a>Q3：循环变量问题</h6><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-keyword">if</span>(circle==m)&#123;<br>        node* temp=later;<br>        num-&gt;next=later-&gt;next;<br>        later=later-&gt;next;<br>        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d &quot;</span>,temp-&gt;data);<br>        <span class="hljs-built_in">free</span>(temp);<br>        circle=<span class="hljs-number">0</span>;<br>        sum++;<br>     &#125;<br></code></pre></td></tr></table></figure>
+
+<p>你想清楚！circle&#x3D;0还是1！</p>
+<p>当前节点已经移到下一个了，相当于走了一步，circle应该+1&#x3D;1！</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-keyword">while</span>(sum&lt;=n)&#123;<br>     num=num-&gt;next;<br>     later=later-&gt;next;<br>     circle++;<br>     <span class="hljs-keyword">if</span>(circle==m)&#123;<br>        node* temp=later;<br>        num-&gt;next=later-&gt;next;<br>        later=later-&gt;next;<br>        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d &quot;</span>,temp-&gt;data);<br>        <span class="hljs-built_in">free</span>(temp);<br>        circle=<span class="hljs-number">0</span>;<br>        sum++;<br>     &#125;<br>     &#125;<br>    &#125;<br></code></pre></td></tr></table></figure>
+
+<p>想清楚到底是&lt;&#x3D;还是&lt;！！！</p>
+<p>如果是小于等于，在sum&#x3D;n时仍然会循环，此时已经删完了！</p>
+<p>如果是小于，你想清楚，当sum&#x3D;n-1时，会循环最后一次，sum&#x3D;n-1时已经删了n-1个数了，所以最后删的数是对的！</p>
+<h5 id="3-字符串问题"><a href="#3-字符串问题" class="headerlink" title="3.字符串问题"></a>3.字符串问题</h5><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-keyword">for</span>(;source[i]!=<span class="hljs-string">&#x27; &#x27;</span>;i++)&#123;<br>    temp[i]=source[i];<br>    &#125;<br>    temp[i]=<span class="hljs-string">&#x27; &#x27;</span>;<br>    temp[i+<span class="hljs-number">1</span>]=<span class="hljs-string">&#x27;\0&#x27;</span>;<br></code></pre></td></tr></table></figure>
+
+<p>你想清楚！你想要的是source[i]&#x3D;’ ‘,实际上，当到空格时，已经跳出循环了，没读到！</p>
+<p>一定把循环逻辑搞清楚！</p>
 <h1 id="五-代码优雅性问题"><a href="#五-代码优雅性问题" class="headerlink" title="五.代码优雅性问题"></a>五.代码优雅性问题</h1><h3 id="（1）求小岛面积"><a href="#（1）求小岛面积" class="headerlink" title="（1）求小岛面积"></a>（1）求小岛面积</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">int</span> num=<span class="hljs-number">0</span>;<br>   <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">1</span>;i&lt;n<span class="hljs-number">-1</span>;i++)&#123;<br>       <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> j=<span class="hljs-number">1</span>;j&lt;n<span class="hljs-number">-1</span>;j++)&#123;<br>           <span class="hljs-type">int</span> m=i;<br>           <span class="hljs-type">int</span> h=j;<br>           <span class="hljs-keyword">if</span>(arr[m][h]==<span class="hljs-number">0</span>)&#123;<br>               <span class="hljs-keyword">while</span>(arr[m][h]!=<span class="hljs-number">1</span>)&#123;<br>                   m--;<br>                   <span class="hljs-keyword">if</span>(m==<span class="hljs-number">0</span>)&#123;<br>                       <span class="hljs-keyword">break</span>;<br>                   &#125;<br>               &#125;<br>               <span class="hljs-keyword">if</span>(arr[m][h]==<span class="hljs-number">1</span>)&#123;<br>                   m=i;<br>                   <span class="hljs-keyword">while</span>(arr[m][h]!=<span class="hljs-number">1</span>)&#123;<br>                       m++;<br>                       <span class="hljs-keyword">if</span>(m==n<span class="hljs-number">-1</span>)&#123;<br>                           <span class="hljs-keyword">break</span>;<br>                       &#125;<br>                   &#125;<br>                   <span class="hljs-keyword">if</span>(arr[m][h]==<span class="hljs-number">1</span>)&#123;<br>                       m=i;<br>                       <span class="hljs-keyword">while</span>(arr[m][h]!=<span class="hljs-number">1</span>)&#123;<br>                           h--;<br>                           <span class="hljs-keyword">if</span>(h==<span class="hljs-number">0</span>)&#123;<br>                               <span class="hljs-keyword">break</span>;<br>                           &#125;<br>                       &#125;<br>                       <span class="hljs-keyword">if</span>(arr[m][h]==<span class="hljs-number">1</span>)&#123;<br>                           h=j;<br>                           <span class="hljs-keyword">while</span>(arr[m][h]!=<span class="hljs-number">1</span>)&#123;<br>                               h++;<br>                               <span class="hljs-keyword">if</span>(h==n<span class="hljs-number">-1</span>)&#123;<br>                                   <span class="hljs-keyword">break</span>;<br>                               &#125;<br>                           &#125;<br>                           <span class="hljs-keyword">if</span>(arr[m][h]==<span class="hljs-number">1</span>)&#123;<br>                               num++;<br>                           &#125;<br>                       &#125;<br>                   &#125;<br>               &#125;<br>           &#125;<br>       &#125;<br>   &#125;<br></code></pre></td></tr></table></figure>
 
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++) &#123;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = <span class="hljs-number">0</span>; j &lt; n; j++) &#123;<br>            <span class="hljs-keyword">if</span> (<span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>, &amp;arr[i][j]) != <span class="hljs-number">1</span>) &#123;<br>                <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;<br>            &#125;<br>        &#125;<br>    &#125;<br><br>    <span class="hljs-type">int</span> island_area = <span class="hljs-number">0</span>; <span class="hljs-comment">// 小岛面积计数器</span><br><br>    <span class="hljs-comment">// 3. 核心算法：遍历内部元素 (i=1 到 n-2, j=1 到 n-2)</span><br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">1</span>; i &lt; n - <span class="hljs-number">1</span>; i++) &#123; <span class="hljs-comment">// 遍历行</span><br>        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> j = <span class="hljs-number">1</span>; j &lt; n - <span class="hljs-number">1</span>; j++) &#123; <span class="hljs-comment">// 遍历列</span><br>            <br>            <span class="hljs-comment">// 只有 0 才可能是小岛的一部分</span><br>            <span class="hljs-keyword">if</span> (arr[i][j] == <span class="hljs-number">0</span>) &#123;<br>                <br>                <span class="hljs-comment">// 标记四个方向是否找到 &#x27;1&#x27;</span><br>                <span class="hljs-type">bool</span> found_up = <span class="hljs-literal">false</span>;<br>                <span class="hljs-type">bool</span> found_down = <span class="hljs-literal">false</span>;<br>                <span class="hljs-type">bool</span> found_left = <span class="hljs-literal">false</span>;<br>                <span class="hljs-type">bool</span> found_right = <span class="hljs-literal">false</span>;<br><br>                <span class="hljs-comment">// A. 检查行方向 (左右)</span><br>                <span class="hljs-comment">// 向左查找 (col从 0 到 j-1)</span><br>                <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> col = <span class="hljs-number">0</span>; col &lt; j; col++) &#123;<br>                    <span class="hljs-keyword">if</span> (arr[i][col] == <span class="hljs-number">1</span>) &#123;<br>                        found_left = <span class="hljs-literal">true</span>;<br>                        <span class="hljs-keyword">break</span>;<br>                    &#125;<br>                &#125;<br>                <span class="hljs-comment">// 向右查找 (col从 j+1 到 n-1)</span><br>                <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> col = j + <span class="hljs-number">1</span>; col &lt; n; col++) &#123;<br>                    <span class="hljs-keyword">if</span> (arr[i][col] == <span class="hljs-number">1</span>) &#123;<br>                        found_right = <span class="hljs-literal">true</span>;<br>                        <span class="hljs-keyword">break</span>;<br>                    &#125;<br>                &#125;<br><br>                <span class="hljs-comment">// B. 检查列方向 (上下)</span><br>                <span class="hljs-comment">// 向上查找 (row从 0 到 i-1)</span><br>                <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> row = <span class="hljs-number">0</span>; row &lt; i; row++) &#123;<br>                    <span class="hljs-keyword">if</span> (arr[row][j] == <span class="hljs-number">1</span>) &#123;<br>                        found_up = <span class="hljs-literal">true</span>;<br>                        <span class="hljs-keyword">break</span>;<br>                    &#125;<br>                &#125;<br>                <span class="hljs-comment">// 向下查找 (row从 i+1 到 n-1)</span><br>                <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> row = i + <span class="hljs-number">1</span>; row &lt; n; row++) &#123;<br>                    <span class="hljs-keyword">if</span> (arr[row][j] == <span class="hljs-number">1</span>) &#123;<br>                        found_down = <span class="hljs-literal">true</span>;<br>                        <span class="hljs-keyword">break</span>;<br>                    &#125;<br>                &#125;<br></code></pre></td></tr></table></figure>
@@ -395,6 +503,11 @@
 <p>是错误的！</p>
 <p><strong>调用时</strong>：<code>a</code> 本身就代表了数组的首地址。如果你写 <code>a[]</code>，编译器会非常困惑，因为它觉得你在尝试访问数组的某个元素，但你又没给下标（比如 <code>a[5]</code>）</p>
 <p>只用传数组的地址，即名称a,b</p>
+<p>区别</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">void</span> <span class="hljs-title function_">funcion</span><span class="hljs-params">(<span class="hljs-type">char</span>* str)</span><br><span class="hljs-type">void</span> <span class="hljs-title function_">funcion</span><span class="hljs-params">(<span class="hljs-type">char</span> str)</span><br><span class="hljs-type">void</span> <span class="hljs-title function_">funcion</span><span class="hljs-params">(<span class="hljs-type">char</span> str[])</span><br><span class="hljs-type">void</span> <span class="hljs-title function_">funcion</span><span class="hljs-params">(<span class="hljs-type">char</span>* str[])</span> <br><br></code></pre></td></tr></table></figure>
+
+
+
 <h3 id="（2）scanf何时-何时不"><a href="#（2）scanf何时-何时不" class="headerlink" title="（2）scanf何时+&amp;何时不+"></a>（2）scanf何时+&amp;何时不+</h3><ol>
 <li><p>必须加 <code>&amp;</code> 的情况：基本类型</p>
 </li>
@@ -460,6 +573,8 @@
 <li>如果你想在函数里修改一个 <code>char*</code>，就得传 <code>char**</code>。</li>
 </ul>
 <p>就像你想要别人帮你改家里的装修（<code>int</code>），你要给他钥匙（<code>int*</code>）；如果你想让别人帮你换一把钥匙（<code>char*</code>），你得把存放钥匙的保险箱地址（<code>char**</code>）告诉他。</p>
+<h5 id="区别stu-i-id和stu-i-id"><a href="#区别stu-i-id和stu-i-id" class="headerlink" title="区别stu[i].id和stu+i-&gt;id"></a>区别stu[i].id和stu+i-&gt;id</h5><p><code>A[i]</code> 本质上只是 <code>*(A + i)</code> 的<strong>语法糖</strong></p>
+<p>下标运算符 <code>[]</code> 的优先级比解引用运算符 <code>*</code> 高</p>
 <h5 id="函数-数组"><a href="#函数-数组" class="headerlink" title="函数&amp;数组"></a>函数&amp;数组</h5><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">void</span> <span class="hljs-title function_">swap</span><span class="hljs-params">(<span class="hljs-type">int</span>* <span class="hljs-built_in">array</span>,<span class="hljs-type">int</span> n)</span>&#123;<br>    <span class="hljs-type">int</span> temp=<span class="hljs-built_in">array</span>[n<span class="hljs-number">-1</span>];<br>    <span class="hljs-built_in">array</span>[n<span class="hljs-number">-1</span>]=<span class="hljs-built_in">array</span>[<span class="hljs-number">0</span>];<br>    <span class="hljs-built_in">array</span>[<span class="hljs-number">0</span>]=temp;<br>&#125;<br></code></pre></td></tr></table></figure>
 
 <p>在函数中，只有数组能够直接交换值，其他变量得传入指针形式</p>
@@ -471,6 +586,16 @@
 <p>所以</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs c">result=&amp;<span class="hljs-built_in">array</span>[max];# 写法错误！<br>*result=<span class="hljs-built_in">array</span>[max];#应该顺着result的地址去改里面的值！<br></code></pre></td></tr></table></figure>
 
+<h5 id="指针数组-数组指针"><a href="#指针数组-数组指针" class="headerlink" title="指针数组&amp;数组指针"></a>指针数组&amp;数组指针</h5><p>既然它排序慢，为什么还要用它？数组指针最核心的价值在于<strong>函数传参</strong>。</p>
+<p>当你需要把一个二维数组传给一个通用处理函数时，数组指针是标准写法：</p>
+<p>C</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-comment">// 函数参数：指明每一行是 100 个字节</span><br><span class="hljs-type">void</span> <span class="hljs-title function_">printStrings</span><span class="hljs-params">(<span class="hljs-type">char</span> (*p)[<span class="hljs-number">100</span>], <span class="hljs-type">int</span> n)</span> &#123;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++) &#123;<br>        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%s\n&quot;</span>, p[i]);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h5 id="单链表"><a href="#单链表" class="headerlink" title="单链表"></a>单链表</h5><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs c">node* tail=<span class="hljs-literal">NULL</span>;<br>head-&gt;next=tail;<br>tail=next;<br></code></pre></td></tr></table></figure>
+
+<p>注意！！！</p>
+<p>赋值是瞬间操作！</p>
+<p>即使后面tail&#x3D;next了，前面head-&gt;next依然为NULL！！！</p>
 <h3 id="（8）ASCII码中字母位置"><a href="#（8）ASCII码中字母位置" class="headerlink" title="（8）ASCII码中字母位置"></a>（8）ASCII码中字母位置</h3><p><strong>1. 大写字母的范围</strong> 大写字母 <strong>‘A’</strong> 到 <strong>‘Z’</strong> 占据了十进制数值 <strong>65</strong> 到 <strong>90</strong> 的位置。</p>
 <ul>
 <li><strong>‘A’</strong> 的 ASCII 码是 <strong>65</strong>。</li>
@@ -489,10 +614,202 @@
 <li>在编程中，如果你想把大写转小写，只需 <strong>+32</strong>；小写转大写，只需 <strong>-32</strong>。</li>
 </ul>
 <p>A, B, C, D, E, F, G，H, I, J, K, L, M, N，O, P, Q, R, S, T，U, V, W, X, Y, Z</p>
-<h3 id="（2）打印前多少字符"><a href="#（2）打印前多少字符" class="headerlink" title="（2）打印前多少字符"></a>（2）打印前多少字符</h3><p>打印前20个字符</p>
+<h3 id="（9）打印前多少字符"><a href="#（9）打印前多少字符" class="headerlink" title="（9）打印前多少字符"></a>（9）打印前多少字符</h3><p>打印前20个字符</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%.20s&quot;</span>,arr);<br></code></pre></td></tr></table></figure>
 
+<h3 id="（10）printf打印"><a href="#（10）printf打印" class="headerlink" title="（10）printf打印"></a>（10）printf打印</h3><table>
+<thead>
+<tr>
+<th><strong>数据类型</strong></th>
+<th><strong>printf (打印)</strong></th>
+<th><strong>scanf (读取)</strong></th>
+<th><strong>为什么？</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>int</strong></td>
+<td><strong>值</strong> (<code>n</code>)</td>
+<td><strong>地址</strong> (<code>&amp;n</code>)</td>
+<td><code>scanf</code> 必须知道变量在哪，才能把存进去。</td>
+</tr>
+<tr>
+<td><strong>float</strong></td>
+<td><strong>值</strong> (<code>f</code>)</td>
+<td><strong>地址</strong> (<code>&amp;f</code>)</td>
+<td>同上。</td>
+</tr>
+<tr>
+<td><strong>char</strong></td>
+<td><strong>值</strong> (<code>c</code>)</td>
+<td><strong>地址</strong> (<code>&amp;c</code>)</td>
+<td>同上。</td>
+</tr>
+<tr>
+<td><strong>字符串</strong></td>
+<td><strong>地址</strong> (<code>s</code>)</td>
+<td><strong>地址</strong> (<code>s</code>)</td>
+<td>字符串本质就是地址，所以两者都用地址。</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><strong>数据类型</strong></th>
+<th><strong>关键字</strong></th>
+<th><strong>printf (输出)</strong></th>
+<th><strong>scanf (输入)</strong></th>
+<th><strong>备注</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>字符型</strong></td>
+<td><code>char</code></td>
+<td><code>%c</code></td>
+<td><code>%c</code></td>
+<td>读入单个字符（包括空格）</td>
+</tr>
+<tr>
+<td><strong>短整型</strong></td>
+<td><code>short</code></td>
+<td><code>%hd</code></td>
+<td><code>%hd</code></td>
+<td>h 代表 half (int 的一半)</td>
+</tr>
+<tr>
+<td><strong>整型</strong></td>
+<td><code>int</code></td>
+<td><code>%d</code></td>
+<td><code>%d</code></td>
+<td>最常用的整数格式</td>
+</tr>
+<tr>
+<td><strong>长整型</strong></td>
+<td><code>long</code></td>
+<td><code>%ld</code></td>
+<td><code>%ld</code></td>
+<td>l 代表 long</td>
+</tr>
+<tr>
+<td><strong>长长整型</strong></td>
+<td><code>long long</code></td>
+<td><code>%lld</code></td>
+<td><code>%lld</code></td>
+<td>用于极大整数</td>
+</tr>
+<tr>
+<td><strong>单精度浮点</strong></td>
+<td><code>float</code></td>
+<td><code>%f</code></td>
+<td><strong><code>%f</code></strong></td>
+<td>默认保留 6 位小数</td>
+</tr>
+<tr>
+<td><strong>双精度浮点</strong></td>
+<td><code>double</code></td>
+<td><code>%f</code> 或 <code>%lf</code></td>
+<td><strong><code>%lf</code></strong></td>
+<td><strong>注意：输入必须用 %lf</strong></td>
+</tr>
+<tr>
+<td><strong>字符串</strong></td>
+<td><code>char[]</code></td>
+<td><code>%s</code></td>
+<td><code>%s</code></td>
+<td>遇到空格&#x2F;回车停止</td>
+</tr>
+<tr>
+<td><strong>无符号整型</strong></td>
+<td><code>unsigned int</code></td>
+<td><code>%u</code></td>
+<td><code>%u</code></td>
+<td>仅表示正数</td>
+</tr>
+<tr>
+<td><strong>十六进制</strong></td>
+<td><code>int</code></td>
+<td><code>%x</code></td>
+<td><code>%x</code></td>
+<td>以 0x 格式读写</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th><strong>符号</strong></th>
+<th><strong>拆解</strong></th>
+<th><strong>含义</strong></th>
+<th><strong>对应数据类型</strong></th>
+<th><strong>字节数 (通常)</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong><code>%u</code></strong></td>
+<td><code>%</code> + <code>u</code></td>
+<td><strong>U</strong>nsigned (无符号)</td>
+<td><code>unsigned int</code></td>
+<td>4 字节</td>
+</tr>
+<tr>
+<td><strong><code>%hu</code></strong></td>
+<td><code>%</code> + <code>h</code> + <code>u</code></td>
+<td><strong>H</strong>alf + <strong>U</strong>nsigned</td>
+<td><code>unsigned short</code></td>
+<td>2 字节</td>
+</tr>
+<tr>
+<td><strong><code>%d</code></strong></td>
+<td><code>%</code> + <code>d</code></td>
+<td><strong>D</strong>ecimal (有符号十进制)</td>
+<td><code>int</code></td>
+<td>4 字节</td>
+</tr>
+<tr>
+<td><strong><code>%hd</code></strong></td>
+<td><code>%</code> + <code>h</code> + <code>d</code></td>
+<td><strong>H</strong>alf + <strong>D</strong>ecimal</td>
+<td><code>short</code></td>
+<td>2 字节</td>
+</tr>
+<tr>
+<td><strong><code>%lu</code></strong></td>
+<td><code>%</code> + <code>l</code> + <code>u</code></td>
+<td><strong>L</strong>ong + <strong>U</strong>nsigned</td>
+<td><code>unsigned long</code></td>
+<td>4 或 8 字节</td>
+</tr>
+</tbody></table>
+<p><strong>深度避坑指南</strong></p>
+<p><strong>陷阱一：double 类型的输入输出不对称。</strong> 这是新手最常断命的地方。<strong>scanf</strong> 必须严格区分：<strong>float</strong> 用 <strong>%f</strong>，<strong>double</strong> 必须用 <strong>%lf</strong>。如果你给 <strong>double</strong> 变量用了 <strong>%f</strong>，读进去的数据会变成一串毫无逻辑的乱码。但在 <strong>printf</strong> 输出时，由于 C 语言的提升规则，<strong>double</strong> 用 <strong>%f</strong> 也是完全可以的。</p>
+<p><strong>陷阱二：char 类型的输入会“吃”空格。</strong> 执行 <strong>scanf(“%c”, &amp;ch)</strong> 时，它会老老实实地读取你输入的<strong>每一个</strong>字符，包括你随手敲的空格或回车。如果你想自动跳过这些没用的空格，只读真正的字符，你应该在格式串里加个空格，写成 <strong>scanf(“ %c”, &amp;ch)</strong>。</p>
+<p><strong>陷阱三：scanf 的地址符 &amp;。</strong> 对于 <strong>int、float、char</strong> 等基本类型，输入时必须在变量名前加 <strong>&amp;</strong>（如 <strong>&amp;a</strong>）。但如果是字符串数组（如 <strong>char str[100]</strong>），由于数组名本身在 C 语言里就是地址，所以 <strong>scanf(“%s”, str)</strong> 绝对<strong>不能加 &amp;</strong>。</p>
+<hr>
+<p><strong>3. 进阶技巧：格式化控制</strong></p>
+<p>在 <strong>printf</strong> 输出时，你可以精准控制显示效果。使用 <strong>%.2f</strong> 可以强制保留 <strong>2</strong> 位小数。使用 <strong>%5d</strong> 可以保证输出至少占 <strong>5</strong> 个字符宽度，空间不够时在左侧补空格；如果写成 <strong>%-5d</strong> 则是左对齐。如果你想在数字前面补零（比如显示时间 <strong>08:05</strong>），可以使用 <strong>%02d</strong>。</p>
+<hr>
+<p><strong>4. 总结记忆法</strong></p>
+<p><strong>整数系：</strong> 核心是 <strong>d</strong> (decimal)。短的加 <strong>h</strong> (half)，长的加 <strong>l</strong> (long)，更长的加 <strong>ll</strong>。 <strong>浮点系：</strong> 核心是 <strong>f</strong> (float)。双精度输入必须加 <strong>l</strong>，表示 <strong>long float</strong>。 <strong>字符系：</strong> 字符是 <strong>c</strong> (char)，字符串是 <strong>s</strong> (string)。</p>
+<h3 id="（11）scanf读取"><a href="#（11）scanf读取" class="headerlink" title="（11）scanf读取"></a>（11）scanf读取</h3><ol>
+<li>读字符串时（<code>%s</code>）：是的，遇到空格就停止</li>
+</ol>
+<p>当你使用 <code>%s</code> 读取字符串时，<code>scanf</code> 会从第一个非空白字符（空格、回车、制表符）开始读，直到遇到<strong>下一个</strong>空白字符为止。</p>
+<ul>
+<li><strong>输入</strong>：<code>Hello World</code></li>
+<li><strong>结果</strong>：只读入 <code>Hello</code>，而 <code>World</code> 会留在缓冲区里等待下一次读取。</li>
+</ul>
+<ol start="2">
+<li>读数字时（<code>%d</code>, <code>%f</code>）：它会跳过前面的空格</li>
+</ol>
+<p>读数字时，<code>scanf</code> 会<strong>自动跳过</strong>前面的所有空格，直到看到数字为止；一旦数字读完了，遇到空格它就会停止读取，并将该空格留在缓冲区。</p>
+<ol start="3">
+<li>读字符时（<code>%c</code>）：它连空格都读</li>
+</ol>
+<p>这是最容易出错的地方。<code>%c</code> <strong>不会跳过任何字符</strong>。如果缓冲区里刚好有一个空格或上次输入留下的回车，<code>scanf(&quot;%c&quot;, &amp;ch)</code> 会直接把这个空格读进去。</p>
+<h3 id="（12）fgets用法"><a href="#（12）fgets用法" class="headerlink" title="（12）fgets用法"></a>（12）fgets用法</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c">fgets(str, <span class="hljs-number">100</span>, <span class="hljs-built_in">stdin</span>); <span class="hljs-comment">// 读入一整行，直到遇到回车</span><br></code></pre></td></tr></table></figure>
 
+<h3 id="（13）字符串处理"><a href="#（13）字符串处理" class="headerlink" title="（13）字符串处理"></a>（13）字符串处理</h3><h4 id="1-字符串读取后需要‘-0’封口"><a href="#1-字符串读取后需要‘-0’封口" class="headerlink" title="1.字符串读取后需要‘\0’封口"></a>1.字符串读取后需要‘\0’封口</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">char</span> temp[<span class="hljs-number">100</span>];<br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;source[i]!=<span class="hljs-string">&#x27; &#x27;</span>;i++)&#123;<br>    temp[i]=source[i];<br>    &#125;<br></code></pre></td></tr></table></figure>
+
+<p>读取完之后需要加’\0’封口！</p>
+<h4 id="2-fgets会把’-n’读进去，需要手动删去"><a href="#2-fgets会把’-n’读进去，需要手动删去" class="headerlink" title="2.fgets会把’\n’读进去，需要手动删去"></a>2.fgets会把’\n’读进去，需要手动删去</h4>
                 
               </div>
             
@@ -581,6 +898,12 @@
                 <div class="post-prevnext my-3">
                   <article class="post-prev col-6">
                     
+                    
+                      <a href="/2025/12/31/2025%E2%80%94summary/" title="">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile"></span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
                     
                   </article>
                   <article class="post-next col-6">
